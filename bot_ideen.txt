@@ -1,0 +1,6 @@
+Windmuehle V100 15m Gitterrost 0.2% Obstruktion Off-Grid stabil
+Download 6.96 MB/s trotz Gitterrost, Ping 35.9ms besser als 125ms
+Vergleich: Eduard fest hinten vs. Windmuehle vorn - Gitterrost gewinnt
+Starlink V100 auf Gitterrost: Auto-Heizung aus, Strom Off-Grid
+Obstruktion nur 0.2% - Gitterrost stoert nicht, Windmuehle hilft
+Ubuntu Logger FINAL - 5 Sek Test statt 60 Sek speedtest-cli

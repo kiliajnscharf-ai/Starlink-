@@ -1,0 +1,13 @@
+[Unit]
+Description=Starlink Windmuehle V100
+After=network.target
+
+[Service]
+Type=simple
+User=kilian
+WorkingDirectory=%h/windmuehle-starlink
+ExecStart=/usr/bin/python3 main.py
+Restart=always
+
+[Install]
+WantedBy=default.target

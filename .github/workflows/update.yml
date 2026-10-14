@@ -1,0 +1,20 @@
+name: Platz 1 Update
+on:
+  schedule: [{cron: '*/15 * * * *'}]
+  workflow_dispatch:
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions: {contents: write}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: python3 ./starlink_logger.py --all
+      - run: |
+          git config --global user.name "Platz1-BOT"
+          git config --global user.email "platz1@windmuehle.local"
+          git add . || true
+          git commit -m "🏆 Platz 1: 0.22% 52.08 Mb/s $(date)" || true
+          git push || true
